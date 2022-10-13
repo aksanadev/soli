@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640340558531",
+    "project_id": "bloc-apps",
+    "storage_bucket": "bloc-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640340558531:android:c9584c8814d7ac78595876",
+        "android_client_info": {
+          "package_name": "com.user.soli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640340558531-sm0mmoplj50jnl9usp763lcb2brftffm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBoz-PS2JtjvEtawDNVD_eNeebNvYTNVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640340558531-sm0mmoplj50jnl9usp763lcb2brftffm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -20,7 +20,7 @@ class Header extends StatelessWidget {
       ),
       Stack(alignment: AlignmentDirectional.center, children: [
         Container(
-          height: 60,
+          height: 75,
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
             color: Color.fromARGB(255, 1, 35, 66),
@@ -28,11 +28,11 @@ class Header extends StatelessWidget {
         ),
         Stack(alignment: AlignmentDirectional.center, children: [
           Container(
-            height: 50,
+            height: 65,
             decoration: const BoxDecoration(
                 shape: BoxShape.circle, color: Colors.white),
           ),
-          Image.asset(height: 55, "assets/images/soli_logo.png")
+          Image.asset(height: 75, "assets/images/soli_logo.png")
         ])
       ]),
     ]);
