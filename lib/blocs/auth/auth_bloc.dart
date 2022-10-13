@@ -11,8 +11,6 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final AuthRepository authRepository;
   AuthBloc({required this.authRepository}) : super(Unauthenticated()) {
     on<LoginRequested>((event, emit) async {
-      // ignore: todo
-      // TODO: implement event handler
       emit(Loading()); // this is where you SET the state..
       try {
         await authRepository.logIn(
