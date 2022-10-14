@@ -80,6 +80,20 @@ class _LoginScreenState extends State<LoginScreen> {
                           height: MediaQuery.of(context).size.height * .38,
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            CircleAvatar(backgroundColor: Colors.transparent,radius: 35, child: Image.asset("assets/images/soli_logo_white.png"),),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 15, bottom: 5),
+                              child: Text("Sign in", style: TextStyle(color: Colors.white, fontSize: 25),),
+                            ),Text("Welcome back! Please sign into your\naccount", style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w300),),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                   Padding(
@@ -137,7 +151,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             const Divider(),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-
                               children: [
                                 const Text("Don't have an account?"),
                                 TextButton(
