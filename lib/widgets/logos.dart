@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soli/styles/colors.dart';
 
 class SoliLogo extends StatelessWidget {
   const SoliLogo({
@@ -9,19 +10,19 @@ class SoliLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(alignment: AlignmentDirectional.center, children: [
       Container(
-        height: 60,
+        height: 75,
         decoration: const BoxDecoration(
           shape: BoxShape.circle,
-          color: Color.fromARGB(255, 1, 35, 66),
+          color: SoliColors.navyBlue
         ),
       ),
       Stack(alignment: AlignmentDirectional.center, children: [
         Container(
-          height: 50,
+          height: 65,
           decoration:
               const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
         ),
-        Image.asset(height: 55, "assets/images/soli_logo.png")
+        Image.asset(height: 50, "assets/images/soli_logo_transparent_bg.png")
       ])
     ]);
   }

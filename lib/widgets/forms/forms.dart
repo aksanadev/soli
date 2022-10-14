@@ -18,21 +18,28 @@ class InputField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: textController,
-      // autovalidateMode: AutovalidateMode.disabled,
-      keyboardType: keyboard,
-      validator: (value) {
-    return value != null && value.length < 6
-        ? validatorText
-        : null;
-  },
-      decoration: InputDecoration(
-          border: const OutlineInputBorder(), label: Text(fieldName)),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 15, bottom: 10),
+          child: Text(fieldName),
+        ),
+        TextFormField(
+          controller: textController,
+          // autovalidateMode: AutovalidateMode.disabled,
+          keyboardType: keyboard,
+          validator: (value) {
+            return value != null && value.length < 6 ? validatorText : null;
+          },
+          obscureText: true,
+          decoration: const InputDecoration(
+              border: OutlineInputBorder(), hintText: "********"),
+        ),
+      ],
     );
   }
 }
-
 
 // ignore: must_be_immutable
 class InputEmailField extends StatelessWidget {
@@ -51,18 +58,26 @@ class InputEmailField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: textController,
-      // autovalidateMode: AutovalidateMode.disabled,
-      keyboardType: keyboard,
-      validator: (value) {
-        return value != null &&
-                !EmailValidator.validate(value)
-            ? 'Enter a valid email'
-            : null;
-      },
-      decoration: InputDecoration(
-          border: const OutlineInputBorder(), label: Text(fieldName)),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 15, bottom: 10),
+          child: Text(fieldName),
+        ),
+        TextFormField(
+          controller: textController,
+          // autovalidateMode: AutovalidateMode.disabled,
+          keyboardType: keyboard,
+          validator: (value) {
+            return value != null && !EmailValidator.validate(value)
+                ? 'Enter a valid email'
+                : null;
+          },
+          decoration: const InputDecoration(
+              border: OutlineInputBorder(), hintText: "Johnkennedy.royce@gmail.com"),
+        ),
+      ],
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soli/styles/colors.dart';
 
 class BookDataRow extends StatelessWidget {
   const BookDataRow({
@@ -39,12 +40,12 @@ class BookDataRow extends StatelessWidget {
                   height: 28,
                   width: 95,
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.amber, width: 2),
+                      border: Border.all(color: SoliColors.gold),
                       borderRadius: BorderRadius.circular(13)),
                 ),
                 const Text(
                   "View Task",
-                  style: TextStyle(color: Colors.amber),
+                  style: TextStyle(color: SoliColors.gold),
                 ),
               ],
             )

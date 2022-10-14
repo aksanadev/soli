@@ -13,7 +13,7 @@ class Body extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final user = FirebaseAuth.instance.currentUser!;
+final user = FirebaseAuth.instance.currentUser!;
 
   @override
   Widget build(BuildContext context) {

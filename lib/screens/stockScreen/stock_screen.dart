@@ -1,5 +1,7 @@
+
+
 import 'package:flutter/material.dart';
-import 'package:soli/widgets/fonts/titles.dart';
+import 'package:soli/styles/fonts.dart';
 import 'package:soli/widgets/header.dart';
 
 class StockScreen extends StatelessWidget {
