@@ -87,10 +87,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             CircleAvatar(backgroundColor: Colors.transparent,radius: 35, child: Image.asset("assets/images/soli_logo_white.png"),),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 15, bottom: 5),
+                            const Padding(
+                              padding: EdgeInsets.only(top: 15, bottom: 5),
                               child: Text("Sign in", style: TextStyle(color: Colors.white, fontSize: 25),),
-                            ),Text("Welcome back! Please sign into your\naccount", style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w300),),
+                            ),const Text("Welcome back! Please sign into your\naccount", style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w300),),
                           ],
                         ),
                       )
